@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: yuk
+  m_EditorClassIdentifier: 
+  m_GroupName: yuk
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bd206d8b02b0de54283bad900eca2b6a
+  m_SerializeEntries:
+  - m_GUID: 2bef00cb5b6f7b6468e4d935ec7e8dd0
+    m_Address: "\u512A\u5B50a_0_1038"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - yuk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c62ac7a95b4c45c46b998dc3d284d88e
+    m_Address: yuk_face_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - yuk
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8140a283af6fbd84e964173b0b5f3373
+    m_Address: yuk_face_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - yuk
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c43de16cc36de714ebb3a2cdda486788, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f59c22eb1119f2940bc6b33b32b72ebc, type: 2}
+    - {fileID: 11400000, guid: 6a332e7466a976b4ea3739ae301fd402, type: 2}

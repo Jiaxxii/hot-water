@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: sin
+  m_EditorClassIdentifier: 
+  m_GroupName: sin
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0ed86e1a9d94a634d8ad930424661a99
+  m_SerializeEntries:
+  - m_GUID: d86c85f50bd7d3149b544879a0701bea
+    m_Address: "\u771F\u5948\u7F8Ea_0_1467"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9a859b38421c98047becaccd08dcb09d
+    m_Address: "\u771F\u5948\u7F8Ea_0_1469"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da8436ddafc08e940b089224577399d1
+    m_Address: "\u771F\u5948\u7F8Ea_0_1465"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ec71e5d367f2fb49a26fff688eb2d56
+    m_Address: "\u771F\u5948\u7F8Ea_0_1475"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f88cfd327b74de46a64fdf0ac26c409
+    m_Address: "\u771F\u5948\u7F8Ea_0_1471"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8f0cceeb0e0e9e4b90feebfd3b82ff0
+    m_Address: "\u771F\u5948\u7F8Ea_0_1473"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73fdec870db3d13449a13489bca56e1c
+    m_Address: sin_face_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 439f4337e8f5ecd4c97b6e8fc1500b81
+    m_Address: "\u771F\u5948\u7F8Ea_0_1463"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - None
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68f531de965595548b4df54b875956fa
+    m_Address: sin_face_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sin
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c43de16cc36de714ebb3a2cdda486788, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 033aa730ba78a9646b221d9a2e73532f, type: 2}
+    - {fileID: 11400000, guid: c0d9e0205c375cb4cac7040e8cd1cf56, type: 2}

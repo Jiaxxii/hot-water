@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ai
+  m_EditorClassIdentifier: 
+  m_GroupName: ai
+  m_Data:
+    m_SerializedData: []
+  m_GUID: eae8b054b2800f844a5a82b9db18dd01
+  m_SerializeEntries:
+  - m_GUID: afd59b125f474ae488027045238aad1a
+    m_Address: ai_face_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ai
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 49f1688d7252e2b40b58eed91ce51e0a
+    m_Address: ai_face_0
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ai
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13b221148ae264040a1a34434e6f0272
+    m_Address: "\u611B\u5B9Fa_0_1432"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ai
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a42ace665077b94da32135112c4744e
+    m_Address: "\u611B\u5B9Fa_0_1430"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ai
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0888681dd63d49b4aab0043100e846f7
+    m_Address: "\u611B\u5B9Fa_0_1428"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ai
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6bbd67a344d4a742a037d2d00d1f249
+    m_Address: "\u611B\u5B9Fa_0_1426"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - None
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c43de16cc36de714ebb3a2cdda486788, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 736bf7e2f52ff554c9680d2f7220120f, type: 2}
+    - {fileID: 11400000, guid: 49a7339ff7e27e842a2d2404519cbc7a, type: 2}

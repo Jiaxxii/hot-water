@@ -1,0 +1,27 @@
+# 忽略 Unity 自动生成的 Library 文件夹  
+Library/
+  
+# 忽略 Temp 文件夹  
+Temp/
+
+# 忽略 Unity 生成的日志文件  
+*.log  
+  
+# 忽略用户特定的配置文件  
+UserSettings.asset  
+  
+# 忽略 Unity 编辑器锁文件  
+*.unity.lock  
+  
+# 忽略备份文件和系统生成的临时文件  
+*.bak  
+*.swp  
+*~  
+.*~  
+  
+# 忽略项目设置文件夹，因为它可能包含机器特定的路径  
+ProjectSettings/  
+  
+# 你可以继续添加其他需要忽略的文件或文件夹  
+# 例如，你可能想要忽略所有 .meta 文件（但通常这些是需要提交的）  
+# *.meta

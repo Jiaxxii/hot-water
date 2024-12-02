@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ec98b4d6e949d781b29e560443bccd, type: 3}
+  m_Name: sin_loader_info_pair
+  m_EditorClassIdentifier: Assembly-CSharp:Xiyu.ScriptableObject:LoaderInfoPair
+  name: sin
+  bodyLoaderInfo:
+    referenceSprites:
+    - m_AssetGUID: d86c85f50bd7d3149b544879a0701bea
+      m_SubObjectName: "\u771F\u5948\u7F8Ea_0_1467"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: 9a859b38421c98047becaccd08dcb09d
+      m_SubObjectName: "\u771F\u5948\u7F8Ea_0_1469"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: da8436ddafc08e940b089224577399d1
+      m_SubObjectName: "\u771F\u5948\u7F8Ea_0_1465"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: 8ec71e5d367f2fb49a26fff688eb2d56
+      m_SubObjectName: "\u771F\u5948\u7F8Ea_0_1475"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: 0f88cfd327b74de46a64fdf0ac26c409
+      m_SubObjectName: "\u771F\u5948\u7F8Ea_0_1471"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: e8f0cceeb0e0e9e4b90feebfd3b82ff0
+      m_SubObjectName: "\u771F\u5948\u7F8Ea_0_1473"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    offsetJson: {fileID: 4900000, guid: 24b668268ac945ee887c96a135f2f883, type: 3}
+  faceLoaderInfo:
+    referenceSprites:
+    - m_AssetGUID: 73fdec870db3d13449a13489bca56e1c
+      m_SubObjectName: sin_face_0
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: 68f531de965595548b4df54b875956fa
+      m_SubObjectName: sin_face_1
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    offsetJson: {fileID: 0}

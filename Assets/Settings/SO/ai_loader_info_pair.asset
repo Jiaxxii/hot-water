@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ec98b4d6e949d781b29e560443bccd, type: 3}
+  m_Name: ai_loader_info_pair
+  m_EditorClassIdentifier: Assembly-CSharp:Xiyu.ScriptableObject:LoaderInfoPair
+  name: ai
+  bodyLoaderInfo:
+    referenceSprites:
+    - m_AssetGUID: 0888681dd63d49b4aab0043100e846f7
+      m_SubObjectName: "\u611B\u5B9Fa_0_1428"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: 7a42ace665077b94da32135112c4744e
+      m_SubObjectName: "\u611B\u5B9Fa_0_1430"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: 13b221148ae264040a1a34434e6f0272
+      m_SubObjectName: "\u611B\u5B9Fa_0_1432"
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    offsetJson: {fileID: 0}
+  faceLoaderInfo:
+    referenceSprites:
+    - m_AssetGUID: afd59b125f474ae488027045238aad1a
+      m_SubObjectName: ai_face_1
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    - m_AssetGUID: 49f1688d7252e2b40b58eed91ce51e0a
+      m_SubObjectName: ai_face_0
+      m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_EditorAssetChanged: 1
+    offsetJson: {fileID: 0}

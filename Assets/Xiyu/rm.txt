@@ -1,0 +1,97 @@
+﻿前言：
+    - 如果您想添加新的人物立绘，您必须配置两个配置文件，一个是“立绘加载配置文件”，一个是“立绘偏移信息”，这两个配置文件是用来加载立绘的图片以及偏移信息的。
+    - “立绘加载配置文件”是加载立绘的基础，没有添加对应的配置文件，您的立绘是无法加载的，您主要需要指定一个“立绘实例”的引用以及一个统一的立绘名称。
+    - “立绘偏移信息”包含了立绘的（图片资源）引用您还可以指定立绘的偏移信息，这个信息是用来调整立绘的碰撞体的大小与偏移的，这个信息是可选的，如果您不指定，立绘的碰撞体将会使用默认的碰撞体（“立绘实例”中）。
+
+
+
+1.添加新的人物立绘
+    - 首先，您需要准备立绘素材，推荐立绘按照“身体”、“表情”进行分类，并且表情只有“正常”与“痛苦”两种,你可以将“痛苦”的表情命名为 立绘名称_face_0，将“痛苦”的表情命名为 立绘名称_face_1。
+    - 接着，您的立绘添加到 Addressable 系统中（“窗口 -> 资产管理 -> Addressable -> 组”）。
+    - 现在，您可以来到 “Assets/Prefabricate” 文件夹中随便拖拽出一个预制体到场景中。选择您的预制体，右键点击 “预制件 -> 完全解压缩”，
+    您可以先为“Sprite Renderer” 指定为新的人物立绘，方便调整其碰撞体的大小与偏移（记得移除），接着看向 “Character” 组件。
+    
+    - 在 “Character” 组件中，你可以看到许多属性，其中 “Character Name” 是您需要重点关注的属性，这个属性是用来指定人物立绘的名称的，请确保您的立绘名称与其他立绘名称不冲突。
+    * 我在上面提到“你可以将“痛苦”的表情命名为 立绘名称_face_0，将“痛苦”的表情命名为 立绘名称_face_1”，这里的“Character Name”属性名称最好与立绘名称一致，这会极大的方便您的开发。
+        - 现在，我会为您解释其他的属性的作用：
+        - 引用属性：
+            - “RB” 属性类型<UnityEngine.Rigidbody2D> 是否为空：否 --- 指定当前立绘的刚体组件（建议勾选 “Constraints -> 冻结旋转”），这是必须的。
+            - “Body Sprite Renderer” 属性类型<UnityEngine.SpriteRenderer> 是否为空：否 --- 指定当前立绘的身体部分的 SpriteRenderer 组件，这是必须的。
+            - “Face Sprite Renderer” 属性类型<UnityEngine.SpriteRenderer> 是否为空：否 --- 指定当前立绘的表情部分的 SpriteRenderer 组件，这是必须的。
+            - “Body Collider” 属性类型<UnityEngine.BoxCollider2D> 是否为空：否 --- 指定当前立绘的身体部分的碰撞体组件，这是必须的。
+        -受伤模版：
+            - “Empyrosis Jump Force” 属性类型<float> 值需要大于 0 --- 指定当前立绘受伤时向上的跳跃力度。
+            - “Empyrosis Collision Force” 属性类型<float> 值需要大于 0 --- 与“水壶”发生碰撞时向其反方向的力度。
+            - “Hurt Quit Time” 属性类型<float> 值需要大于 0 --- 指定当前立绘受伤后的无敌时间。
+            -受伤音效：
+                - “音频源” 属性类型<UnityEngine.AudioSource> 是否为空：可选（建议指定） --- 指定当前立绘受伤时的音效，如果手动指定，可以将“Audio Source”组件中的“输出”选择名称为“Scene”的AudioMixer，这可以让立绘受伤的声音有特殊音效。
+                - “Hurt Audio Clips” 属性类型<UnityEngine.AudioClip[]> 是否为空：可选（建议指定最少一个） --- 指定当前立绘受伤时的音效，可以指定多个音效。
+                
+    - 现在，您将其拖游戏对象拽到 “Assets/Prefabricate” 文件夹中，并且添加到 Addressable 系统中，恭喜您成功创建了一个“立绘实例”。
+    - 接着，我们需要创建“立绘加载配置”，在 “项目” 面板中右键 “创建 -> ScriptableObject -> Character Info”，这个配置文件是用来加载“立绘实例”的，您可以将其命名为“立绘名称_character_info”，您可以将“立绘名称”替换为您的立绘名称，打开它，我会为您介绍这个配置文件的属性：
+        - "Character Name" 属性类型<string> 是否为空：否 --- 指定当前立绘的名称，这个名称是用来加载“立绘实例”的,是否重要，您最好与“Character”的“Character Name”属性名称一致。
+        - “Reference Game Object” 属性类型<UnityEngine.AddressableAssets.AssetReferenceGameObject> 是否为空：否 --- 指定当前立绘的预制体的地址。
+    - 现在，将这个配置文件添加到“Assets/Resources/CharacterLoaderSettings”配置中，恭喜您成功创建了一个“立绘加载配置文件”。
+
+2.添加立绘偏移信息
+    - 我很抱歉，我们发现同一个的不同的“身体”切换时，由于立绘的尺寸不一致，会导致与立绘的“表情”产生偏移，这是我们不希望看到的，所以我们需要为每一个立绘添加偏移信息。
+    - 首先，我们来到“Assets/Resources/Settings”文件夹中，这里你会看到一个名称为“sin_role_init_offsets.json”文件，您可以打开这个文件，您会看到一个Json格式的数据，这里面存储了立绘名称为“sin”立绘的偏移信息，现在
+    我们来创建一个名称相似的Json文件，例如“立绘名称_role_init_offsets.json”，您可以将“立绘名称”替换为您的立绘名称，打开它，我会为您介绍这个Json文件的格式：
+    {
+         为这个立绘起一个别名
+        "身体1": {
+        
+            这是“身体”立绘的实际名称，也就是文件名称 
+          "FileName": "真奈美a_0_1463",
+          
+            这是立绘的偏移信息，一般我们会将第一个身体作为基准，所以这个身体不需要进行偏移
+            * 请注意，所有的立绘表情都必须根据这个身体的偏移进行调整
+          "PositionOffset": {
+            "x": 0,
+            "y": 0
+          },
+          
+            这是立绘的碰撞体信息，这个信息是用来调整立绘的碰撞体的大小与偏移
+          "CapsuleCollider2D": {
+            "Offset": {
+              "x": 0.2178,
+              "y": 0
+            },
+            "Size": {
+              "x": 4.919,
+              "y": 31.831
+            }
+          }
+        },
+        "身体2": {
+          "FileName": "真奈美a_0_1465",
+          
+          这里设置身体2的“Position”为(0,0)可能他就不与身体1重叠了，所以我们应该调整他的位置与其身体1重叠
+          "PositionOffset": {
+            "x": 0.414,
+            "y": -0.152
+          },
+          "CapsuleCollider2D": {
+            "Offset": {
+              "x": 0.2178,
+              "y": 0
+            },
+            "Size": {
+              "x": 4.919,
+              "y": 31.831
+            }
+          }
+        }
+    }
+    - 现在，保存您的文件，你就得到了“立绘偏移信息”
+    - 接着我们在 “项目” 面板中右键 “创建 -> ScriptableObject -> Loader Info Pair”，这个配置文件是用来加载立绘的图片以及偏移信息的，您可以将其命名为“立绘名称_loader_info_pair”，您可以将“立绘名称”替换为您的立绘名称，打开它，我会为您介绍这个配置文件的属性：
+        - "名称" 属性类型<string> 是否为空：否 --- 指定当前立绘的名称，这个名称是用来加载立绘的图片以及偏移信息的,是否重要，您最好与“Character”的“Character Name”属性名称一致。
+        - “Body Loader Info” 属性类型<Xiyu.ScriptableObject.LoaderInfo> 是否为空：否 --- 指定身体的图片以及偏移信息的地址（就是上面创建的“立绘偏移信息”），如果没有偏移信息则不用指定。
+            - 类型<Xiyu.ScriptableObject.LoaderInfo> ：
+            "Reference Sprites" 属性类型<UnityEngine.AddressableAssets.AssetReferenceSprite> 是否为空：否 --- 指定当前立绘的身体部分的图片的地址，请额外指定别名。
+            "Offset Json" 属性<UnityEngine.TestAsset> 是否为空：否 --- 指定当前立绘的身体部分的偏移信息的地址（就是上面创建的“立绘偏移信息”）。
+        - “Face Loader Info” 属性类型<Xiyu.ScriptableObject.LoaderInfo> 是否为空：否 --- 一般只需要指定 "Reference Sprites"属性的引用就好了。
+    - 现在，将这个配置文件添加到“Assets/Resources/LoaderScriptableObject”配置中，恭喜您成功创建了一个“立绘加载配置文件”。
+    
+3.检查预制体以及配置文件是否有问题，如果一切正常，您就可以运行游戏，看看您的立绘是否正常加载了。
+    

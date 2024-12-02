@@ -1,0 +1,121 @@
+﻿{
+  "素体": {
+    "FileName": "真奈美a_0_1463",
+    "PositionOffset": {
+      "x": 0,
+      "y": 0
+    },
+    "CapsuleCollider2D": {
+      "Offset": {
+        "x": 0.2178,
+        "y": 0
+      },
+      "Size": {
+        "x": 4.919,
+        "y": 31.831
+      }
+    }
+  },
+  "校服": {
+    "FileName": "真奈美a_0_1465",
+    "PositionOffset": {
+      "x": 0.414,
+      "y": -0.152
+    },
+    "CapsuleCollider2D": {
+      "Offset": {
+        "x": 0.2178,
+        "y": 0
+      },
+      "Size": {
+        "x": 4.919,
+        "y": 31.831
+      }
+    }
+  },
+  "外出（无包）": {
+    "FileName": "真奈美a_0_1467",
+    "PositionOffset": {
+      "x": 0.414,
+      "y": -0.277
+    },
+    "CapsuleCollider2D": {
+      "Offset": {
+        "x": 0.2178,
+        "y": 0
+      },
+      "Size": {
+        "x": 4.919,
+        "y": 31.831
+      }
+    }
+  },
+  "外出（有包）": {
+    "FileName": "真奈美a_0_1469",
+    "PositionOffset": {
+      "x": 0.414,
+      "y": -0.277
+    },
+    "CapsuleCollider2D": {
+      "Offset": {
+        "x": 0.2178,
+        "y": 0
+      },
+      "Size": {
+        "x": 4.919,
+        "y": 31.831
+      }
+    }
+  },
+  "半透明衣服": {
+    "FileName": "真奈美a_0_1471",
+    "PositionOffset": {
+      "x": 0.32,
+      "y": -0.201
+    },
+    "CapsuleCollider2D": {
+      "Offset": {
+        "x": 0.2178,
+        "y": 0
+      },
+      "Size": {
+        "x": 4.919,
+        "y": 31.831
+      }
+    }
+  },
+  "睡衣": {
+    "FileName": "真奈美a_0_1473",
+    "PositionOffset": {
+      "x": 0.103,
+      "y": -0.13
+    },
+    "CapsuleCollider2D": {
+      "Offset": {
+        "x": 0.2178,
+        "y": 0
+      },
+      "Size": {
+        "x": 4.919,
+        "y": 31.831
+      }
+    }
+  },
+  "哥特": {
+    "FileName": "真奈美a_0_1475",
+    "PositionOffset": {
+      "x": 0.8,
+      "y": -0.1
+    },
+    "CapsuleCollider2D": {
+      "Offset": {
+        "x": -0.280,
+        "y": -0.2134
+      },
+      "Size": {
+        "x": 4.3024,
+        "y": 31.50509
+      }
+    }
+  }
+}
